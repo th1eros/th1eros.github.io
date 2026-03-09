@@ -1,9 +1,137 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"><title>Thierre Becker | Backend .NET</title></head>
-<body style="background:#0d1117;color:#c9d1d9;font-family:sans-serif;text-align:center;padding-top:100px;">
-    <h1>Thierre Becker</h1>
-    <p>Backend .NET Developer | Architecture • Governance • Security</p>
-    <p>Site is now ONLINE.</p>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TH1ER0S.IO | Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #050509;
+            --bg-card: #0c0d12;
+            --primary: #00f2fe;
+            --primary-dark: #4facfe;
+            --text-main: #e0e6ed;
+            --cyber-glow: 0 0 15px rgba(0, 242, 254, 0.4);
+            --font-main: 'Chakra Petch', sans-serif;
+            --font-mono: 'Share Tech Mono', monospace;
+        }
+
+        body {
+            margin: 0; padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            display: flex; justify-content: center; align-items: center;
+            min-height: 100vh; text-align: center;
+            background-image: radial-gradient(circle at 50% 50%, rgba(79, 172, 254, 0.08) 0%, transparent 70%);
+        }
+
+        .hub-container {
+            background: var(--bg-card);
+            border: 1px solid rgba(79, 172, 254, 0.2);
+            border-radius: 16px;
+            padding: 50px 30px;
+            max-width: 420px;
+            width: 90%;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            position: relative;
+        }
+
+        .hub-logo {
+            width: 120px; height: 120px;
+            border-radius: 50%;
+            margin-bottom: 25px;
+            border: 2px solid var(--primary);
+            padding: 5px;
+            filter: drop-shadow(var(--cyber-glow));
+            object-fit: cover;
+        }
+
+        h1 {
+            font-family: var(--font-mono);
+            color: var(--primary);
+            font-size: 1.6rem;
+            margin: 0;
+            letter-spacing: 4px;
+            text-shadow: var(--cyber-glow);
+        }
+
+        .cyber-bio {
+            font-weight: 300; font-size: 0.85rem;
+            color: #64748b; margin: 10px 0 35px;
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+
+        .links-group { display: flex; flex-direction: column; gap: 18px; }
+
+        .cyber-link {
+            display: flex; align-items: center;
+            text-decoration: none; color: var(--text-main);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(79, 172, 254, 0.1);
+            padding: 14px 20px; border-radius: 10px;
+            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .cyber-link:hover {
+            border-color: var(--primary);
+            background: rgba(0, 242, 254, 0.05);
+            transform: translateY(-2px);
+            box-shadow: var(--cyber-glow);
+        }
+
+        .cyber-link i {
+            font-size: 1.3rem; margin-right: 15px;
+            color: var(--primary-dark);
+        }
+
+        .link-title { font-weight: 700; font-size: 1rem; display: block; }
+        .link-desc { font-size: 0.75rem; color: #475569; }
+
+        .cyber-footer {
+            margin-top: 40px; font-size: 0.65rem;
+            color: #334155; font-family: var(--font-mono);
+        }
+    </style>
+</head>
+<body>
+    <div class="hub-container">
+        <img src="img/logo.jpg" alt="Signature Φ" class="hub-logo">
+        
+        <h1>TH1ER0S</h1>
+        <p class="cyber-bio">Dev .NET | Cibersegurança | Infra</p>
+
+        <div class="links-group">
+            <a href="https://th1eros.github.io/front-svsharp/" class="cyber-link">
+                <i class="fas fa-terminal"></i>
+                <div style="text-align: left;">
+                    <span class="link-title">Cybersecurity Dashboard</span>
+                    <span class="link-desc">Visualização de ativos em tempo real</span>
+                </div>
+            </a>
+
+            <a href="https://github.com/th1eros" class="cyber-link" target="_blank">
+                <i class="fab fa-github"></i>
+                <div style="text-align: left;">
+                    <span class="link-title">GitHub</span>
+                    <span class="link-desc">Repositórios e Open Source</span>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/th1eros/" class="cyber-link" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <div style="text-align: left;">
+                    <span class="link-title">LinkedIn</span>
+                    <span class="link-desc">Conexão Profissional</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="cyber-footer">
+            [ACCESS_GRANTED] - SESSION: 2026.03.09
+        </div>
+    </div>
 </body>
 </html>
