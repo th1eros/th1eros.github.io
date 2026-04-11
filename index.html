@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TH1ER0S.IO | Hub</title>
+    <title>TH1ER0S | Hub</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta name="google-site-verification" content="by4vKFisrr9phdkhVyDya_BgbVMj0c0X9ZRNfABoXrI"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -41,14 +42,61 @@
             position: relative;
         }
 
+        .hub-logo-wrap {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 25px;
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { filter: drop-shadow(0 0 12px rgba(0, 242, 254, 0.4)); }
+            50%       { filter: drop-shadow(0 0 28px rgba(0, 242, 254, 0.95)); }
+        }
+
         .hub-logo {
-            width: 120px; height: 120px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            margin-bottom: 25px;
             border: 2px solid var(--primary);
             padding: 5px;
-            filter: drop-shadow(var(--cyber-glow));
             object-fit: cover;
+            display: block;
+        }
+
+        .phi-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Georgia, serif;
+            font-size: 3.2rem;
+            font-weight: bold;
+            color: #00f2fe;
+            text-shadow:
+                0 0 8px rgba(0, 242, 254, 0.9),
+                0 0 20px rgba(0, 242, 254, 0.6),
+                0 0 40px rgba(0, 242, 254, 0.3);
+            pointer-events: none;
+            user-select: none;
+            animation: phi-pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes phi-pulse {
+            0%, 100% {
+                text-shadow:
+                    0 0 6px rgba(0, 242, 254, 0.8),
+                    0 0 15px rgba(0, 242, 254, 0.5);
+                opacity: 0.85;
+            }
+            50% {
+                text-shadow:
+                    0 0 12px rgba(0, 242, 254, 1),
+                    0 0 30px rgba(0, 242, 254, 0.8),
+                    0 0 55px rgba(0, 242, 254, 0.4);
+                opacity: 1;
+            }
         }
 
         h1 {
@@ -90,7 +138,7 @@
         }
 
         .link-title { font-weight: 700; font-size: 1rem; display: block; }
-        .link-desc { font-size: 0.75rem; color: #475569; }
+        .link-desc  { font-size: 0.75rem; color: #475569; }
 
         .cyber-footer {
             margin-top: 40px; font-size: 0.65rem;
@@ -100,8 +148,11 @@
 </head>
 <body>
     <div class="hub-container">
-        <img src="img/logo-th1eros.png" alt="Signature Φ" class="hub-logo">
-        
+
+        <div class="hub-logo-wrap">
+            <img src="img/th1e.png" alt="Signature Phi" class="hub-logo">            
+        </div>
+
         <h1>TH1ER0S</h1>
         <p class="cyber-bio">DevSecOps .NET | Cyber | Infra</p>
 
